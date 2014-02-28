@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pour afficher du C++
+\usepackage{listings}
+
+\usepackage{float}
+\usepackage{makeidx}
+\usepackage{placeins} % pour floatbarrier
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[francais]{babel}
+\usepackage[lmargin=2.5cm,a4paper,textwidth=16cm,textheight=25cm]{geometry}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{xr}
+\usepackage[ruled]{caption}
+\usepackage{fancyhdr}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\setcounter{MaxMatrixCols}{10}
+\usepackage[french,ruled, vlined]{algorithm2e}
+
+\SetKwInput{Donnes}{Donn\'{e}es}
+\SetKwInput{Res}{R\'{e}sultat}
+\SetKwInput{Entree}{Entr\'{e}es}
+\SetKwInput{Sortie}{Sorties}
+\SetKw{KwA}{Ã\'{e}Â }
+\SetKw{Retour}{retourner}
+\SetKwBlock{Deb}{d\'{e}but}{fin}
+
+% \SetKwIF{If}{ElseIf}{Else}{if}{then}{else if}{else}{endif}
+\SetKwIF{Si}{SinonSi}{Sinon}{si}{alors}{sinon si}{sinon}{finsi}
+\SetKwSwitch{Suivant}{Cas}{Autre}{suivant}{faire}{cas oÃ\'{e}Â¹}{autres cas}{fin d'alternative}
+\SetKwFor{Pour}{pour}{faire}{finpour}
+\SetKwFor{Tq}{tant que}{faire}{fintantque}
+\SetKwFor{PourCh}{pour chaque}{faire}{finprch}
+\SetKwFor{PourTous}{pour tous}{faire}{finprts}
+\SetKwRepeat{Repeter}{faire}{tantQue}
+
+% Ajout Christophe
+\DeclareTextSymbol{\degre}{T1}{6}
+\newcommand{\lire}[1]{\textbf{lire}~#1}
+\newcommand{\affecter}   {\textbf{$\leftarrow$}}
+\newcommand{\ecrire}[1]{\textbf{\'{e}crire}~\og{}#1\fg{}}
+\newcommand{\ecrirevar}[1]{\textbf{\'{e}crire}~#1}
+\newcommand{\et}{\textbf{ET}~}
+\newcommand{\ou}{\textbf{OU}~}
+\newcommand{\xor}{\textbf{XOR}~}
+\newcommand{\non}{\textbf{NON}~}
+
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\newcommand{\correction}[1]{
+%#1
+}
+
+\lstset{extendedchars=true}
+\lstdefinelanguage{c++}{
+morekeywords=
+{and,array,break,case,continue,default,do,
+echo,else,elseif,exit,extends,for,global,if,include,
+includeonce,or,print,require,requireonce,return,
+static,switch,then,var,while,xor,foreach,as,class,
+function,new,extends
+},
+sensitive,%
+morecomment=[l]
+\#,%
+morecomment=[l]//,%
+morecomment=[s]
+{/?}{?/},%
+morestring=[b]``,%
+morestring=[b]'%
+}[keywords,comments,strings]
+\lstdefinestyle{nombres}{numbers=left,stepnumber=10,
+numberstyle=
+\tiny,numbersep=10pt}
+
+\begin{document}
+
+\title{\vspace{-1.5cm}Ordre du jour - R\'{e}union de pr\'{e}-conseil}
+\author{E.Lavignotte}
+\date{}
+\maketitle
+
+\section{Points \`{a} traiter}
+
+\begin{enumerate}
+\item Projets de classe
+\item Bilan individuel de chaque \'{e}l\`{e}ve
+\item Conclusion
+\end{enumerate}
+
+\end{document}
+
+
+
